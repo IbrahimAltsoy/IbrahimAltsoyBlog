@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutOzel.cshtml";
+}
+
+<h1>Cooki Oluştur</h1>
+<form asp-action="CookieOlustur">
+    <input type="text" name="name" placeholder="Kullanıcı Adı" value="admin" />
+    <input type="password" name="password" placeholder="Şifre" />
+    <input type="submit" value="Giriş" />
+</form>
+
+@TempData["mesaj"]
+<br />
+Kullanıcı Adı: @TempData["name"]
+<br />
+Şifre: @TempData["password"]
+@*@TempData["kullaniciguid"]*@

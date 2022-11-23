@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "CookieOku";
+    Layout = "~/Views/Shared/_LayoutOzel.cshtml";
+}
+
+<h1>CookieOku</h1>
+
+@{
+    ViewData["Title"] = "Cookie Oku";
+}
+
+<h1>Cookie Oku</h1>
+
+<div>
+    Cookie deki kullanıcı adı : @TempData["name"]
+</div>
+
+<div>
+    Cookie deki kullanıcı guid : @TempData["kullaniciguid"]
+</div>
+
+<a asp-action="CookieSil">
+    Cookie Sil
+</a>
+
